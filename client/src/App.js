@@ -2,20 +2,20 @@ import React from 'react';
 import './App.css';
 
 function App() {
-  const [movies, setMovies] = React.useState("temp movie placeholder");
+  const [content, setContent] = React.useState("temp movie placeholder");
 
-  const getMovies = (searchTerm) => {
-    fetch('/movies')
+  const getTrendingContent = (searchTerm) => {
+    fetch('/trending')
     .then(response => response.json())
-    .then(body => setMovies(body));
+    .then(body => setContent(body));
   }
 
-  React.useEffect(() => getMovies(), [])
+  React.useEffect(() => getTrendingContent(), [])
   return (
-    <div className="App" onLoad={getMovies}>
+    <div className="App" onLoad={getTrendingContent}>
       <h1>GoodWatches</h1>
-      Find Movies
-      Movies: {JSON.stringify(movies)}
+      Find Content
+      Content: {JSON.stringify(content)}
     </div>
   );
 }
