@@ -1,9 +1,14 @@
-#coverPic {
-    max-height: 80vh;
+:root {
+    --main-background-color: #303030;
 }
-
+#coverPic {
+    width: 100vw;
+}
+#title {
+    background-color:var(--main-background-color);
+}
 #highlight {
-    background: #303030;
+    background-color: var(--main-background-color);
     position: relative;
 }
 #highlightDescription {
