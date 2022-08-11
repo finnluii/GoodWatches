@@ -23,3 +23,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# don't commit bootstrap source files -- I am using for reference only. 
+# The site uses CDN. 
+bootstrap-5.0.2-dist/

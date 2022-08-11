@@ -1,0 +1,15 @@
+#coverPic {
+    max-height: 80vh;
+}
+
+#highlight {
+    background: #303030;
+    position: relative;
+}
+#highlightDescription {
+    /* background-color: rgba(255,255,255,0.5); */
+    font-family: 'Major Mono Display', sans-serif;
+    position: absolute;
+    bottom: 150px;
+    right: 100px;
+}

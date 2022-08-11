@@ -18,13 +18,27 @@ const port = process.env.PORT || 8000;
 const mdbAPIKey = config.MOVIE_API_KEY;
 const mdbAPIURL = "https://api.themoviedb.org/3";
 
-app.get("/trending", (req, res) => {
-  console.log("req:" + req.body);
+// app.get("/trending", (req, res) => {
+//   // res.json({ "movies" : "Damage" });
+//   console.log(__dirname);
+//   fetch(`${mdbAPIURL}/trending/all/day?api_key=${mdbAPIKey}`)
+//     .then(response => response.json())
+//     .then(data => res.json(data));
+// });
+app.get("/trending", async (req, res) => {
   // res.json({ "movies" : "Damage" });
-  console.log(__dirname);
-  fetch(`${mdbAPIURL}/trending/all/day?api_key=${mdbAPIKey}`)
-    .then(response => response.json())
-    .then(data => res.json(data));
+  const response = await fetch(`${mdbAPIURL}/trending/all/day?api_key=${mdbAPIKey}`);
+  const data = await response.json();
+  // return res.json(data);
+  res.send(data);
+});
+
+app.post("/search", async (req, res) => {
+  console.log('body: ' + req.body);
+  const response = await fetch(`${mdbAPIURL}/search/multi?api_key=${mdbAPIKey}&query=Damage`);
+  const data = await response.json();
+  res.send(data);
+  // res.send('ataatatat');
 });
 
 app.listen(port, () => {
