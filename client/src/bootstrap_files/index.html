@@ -11,8 +11,8 @@
             rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" 
             crossorigin="anonymous"
         >
-        <link rel="stylesheet" href="css/style.css">
         <link href="http://fonts.cdnfonts.com/css/major-mono-display-2" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
                 
     </head>
     <header>
@@ -50,15 +50,28 @@
     </header>
     <body>
         <section id="highlight">
-            <div id="highlightDescription" class="text-light">
-                <h3>Kingdom of Heaven</h3>
-                <p>2005</p>
-                <button class="btn btn-outline-light">See More</button>
-            </div>
             <img id="coverPic"
-            src="../resources/Screen Shot 2022-07-16 at 12.36.30 PM.png" 
-            class="img-fluid" 
-            alt="background-img">
+                src="../resources/Screen Shot 2022-07-16 at 12.36.30 PM.png" 
+                class="img-fluid" 
+                alt="background-img"
+            >
+            <!-- <div class="container-fluid highlightDescription position-absolute bottom-50 end-0"> -->
+            <div class="container-fluid highlightDescription">
+                <div class="row">
+                    <div class="col">
+                    </div>
+                    <div class="col">
+                    </div>
+                    <div class="col-12 col-sm-4 col-md-4">
+                        <div id="highlightDescription" class="text-light">
+                            <h3>Kingdom of Heaven</h3>
+                            <p>2005</p>
+                            <button class="btn btn-outline-light">See More</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </section>
         <section id="new"></section>
         <section id="trending">
