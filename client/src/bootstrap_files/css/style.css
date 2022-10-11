@@ -33,6 +33,10 @@
     bottom: 20%;
 }
 
+.highlightDescription h2 {
+    font-size: 3rem;
+}
+
 /* Recommendation Section */
 /* #recommendations .col {
     padding: 0 40px;
@@ -67,8 +71,18 @@
 }
 
 /* Trending section */
+
 .trending-img {
     width: 100%;
+    padding: 3% 0;
+}
+
+#testimonials {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    font-size: 3rem;
+    padding: 20% 0;
+    text-align: center;
 }
 
 /* navigation bar */
@@ -117,6 +131,11 @@
     .navbar-brand {
         font-size: 1.1rem;
     }
+
+    #testimonials {
+        font-size: 2rem;
+    }
+
 }
 
 /* // Large devices (desktops, 992px and up) */
@@ -127,6 +146,10 @@
     /* Recommendations section */
     .recommendation-textbox > p {
         padding: 0 20%;
+    }
+
+    .highlightDescription h2 {
+        font-size: 1.5rem;
     }
 }
 
