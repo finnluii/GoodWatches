@@ -6,6 +6,9 @@
     --secondary-color: #3F4E4F;
     --tertiary-color: #A27B5C;
     --quaternary-color: #DCD7C9;
+
+    /* font color */
+    --muted-text-color: #8f8f8f
 }
 #coverPic {
     width: 100vw;
@@ -31,15 +34,21 @@
 }
 
 /* Recommendation Section */
-#recommendations .col {
+/* #recommendations .col {
     padding: 0 40px;
+} */
+
+#recommendations {
+    padding: 5% 10%;
 }
+
 .recommendation-textbox {
-    padding: 30px 0; 
+    padding: 7% 7%; 
 }
 
 .recommendation-textbox > p {
     text-align: justify;
+    color: var(--muted-text-color);
 }
 /* #recommendations .col:first-of-type {
     padding-left: 0px; 
@@ -55,6 +64,11 @@
 
 .fa-icon:hover {
     color: var(--tertiary-color);
+}
+
+/* Trending section */
+.trending-img {
+    width: 100%;
 }
 
 /* navigation bar */
