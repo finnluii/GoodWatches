@@ -21,14 +21,15 @@
         <!-- Font Awesome (icons) -->
         <script src="https://kit.fontawesome.com/9c40133420.js" crossorigin="anonymous"></script>
         <!-- Custom Styles -->
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
                 
     </head>
     <header>
         <section id="title">
             <!-- TODO: Change background to bg-transparent and add js to add colour 
             to background after scrolling. -->
-            <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+            <!-- Add fixed-top class to nav to fix it to the top -->
+            <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">goodwatches</a>
                     <button class="navbar-toggler" 
@@ -39,9 +40,6 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarContent">
                         <ul class="navbar-nav ms-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="">Home</a>
-                            </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="">Movies</a>
                             </li>
@@ -54,6 +52,9 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="">Books</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="">Login</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -63,7 +64,7 @@
     <body>
         <section id="highlight">
             <img id="coverPic"
-                src="../resources/Screen Shot 2022-07-16 at 12.36.30 PM.png" 
+                src="resources/Screen Shot 2022-07-16 at 12.36.30 PM.png" 
                 class="img-fluid" 
                 alt="background-img"
             >
@@ -89,33 +90,119 @@
             <div class="container-fluid">
                 <h3>New Releases</h3>
                 <!-- Carousel promoting new releases -->
-                <h4 id="testimonials">'Into the Woods' Review: A Sensational Sondheim Revival</h4>
+                <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <h4 class="d-block w-100 testimonials" >'Into the Woods' Review: A Sensational Sondheim Revival - Variety</h4>
+                      </div>
+                      <div class="carousel-item">
+                        <h4 class="d-block w-100 testimonials">‘Into The Woods’ Broadway Review: Treats Galore In A Magical Production - Deadline</h4>
+                      </div>
+                      <div class="carousel-item">
+                        <h4 class="d-block w-100 testimonials" >Into the Woods makes a magical return to Broadway - Time Out</h4>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
                 <h3>Recently Reviewed</h3>
+                <div class="row">
+                    <div class="col-6 col-lg-3">
+                        <img 
+                        class="trending-img"
+                        src="resources/carouselJPGs/charles3.png" alt="Charles doing science.">
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <img 
+                            class="trending-img"
+                            src="resources/carouselJPGs/charles5.png" alt="Mike on the bed.">
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <img 
+                        class="trending-img"
+                        src="resources/carouselJPGs/charles7.png" alt="Mike playing ping-pong.">
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <img 
+                        class="trending-img"
+                        src="resources/carouselJPGs/charles9.png" alt="Charles is very sad.">
+                    </div>
+                </div>
                 <h3>Trending Movies</h3>
                 <div class="row">
                     <div class="col-6 col-lg-3">
                         <img 
                         class="trending-img"
-                        src="../resources/carouselJPGs/charles3.png" alt="Charles doing science.">
+                        src="resources/carouselJPGs/charles0.png" alt="Charles doing science.">
                     </div>
                     <div class="col-6 col-lg-3">
                         <img 
                             class="trending-img"
-                            src="../resources/carouselJPGs/charles5.png" alt="Mike on the bed.">
+                            src="resources/carouselJPGs/charles1.png" alt="Mike on the bed.">
                     </div>
                     <div class="col-6 col-lg-3">
                         <img 
                         class="trending-img"
-                        src="../resources/carouselJPGs/charles7.png" alt="Mike playing ping-pong.">
+                        src="resources/carouselJPGs/charles20.png" alt="Mike playing ping-pong.">
                     </div>
                     <div class="col-6 col-lg-3">
                         <img 
                         class="trending-img"
-                        src="../resources/carouselJPGs/charles9.png" alt="Charles is very sad.">
+                        src="resources/carouselJPGs/charles19.png" alt="Charles is very sad.">
                     </div>
                 </div>
                 <h3>Trending TV Shows</h3>
+                <div class="row">
+                    <div class="col-6 col-lg-3">
+                        <img 
+                        class="trending-img"
+                        src="resources/carouselJPGs/charles6.png" alt="Charles doing science.">
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <img 
+                            class="trending-img"
+                            src="resources/carouselJPGs/charles17.png" alt="Mike on the bed.">
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <img 
+                        class="trending-img"
+                        src="resources/carouselJPGs/charles8.png" alt="Mike playing ping-pong.">
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <img 
+                        class="trending-img"
+                        src="resources/carouselJPGs/charles10.png" alt="Charles is very sad.">
+                    </div>
+                </div>
                 <h3>Trending Stage Shows</h3>
+                <div class="row">
+                    <div class="col-6 col-lg-3">
+                        <img 
+                        class="trending-img"
+                        src="resources/carouselJPGs/charles12.png" alt="Charles doing science.">
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <img 
+                            class="trending-img"
+                            src="resources/carouselJPGs/charles13.png" alt="Mike on the bed.">
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <img 
+                        class="trending-img"
+                        src="resources/carouselJPGs/charles16.png" alt="Mike playing ping-pong.">
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <img 
+                        class="trending-img"
+                        src="resources/carouselJPGs/charles15.png" alt="Charles is very sad.">
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -125,31 +212,37 @@
 
                 <div class="row text-center">
                     <div class="col col-12 col-lg-4">
-                        <i class="fa-solid fa-heart fa-3x fa-icon"></i>
-                        <div class="recommendation-textbox">
-                            <h4>Record the Stories You Love</h4>
-                            <p>
-                                Record the Movies and TV Shows you've seen, your night 
-                                at the theatre, or the books you've read.
-                            </p>
+                        <div class="recommendation-header">
+                            <i class="fa-solid fa-heart fa-3x fa-icon"></i>
+                            <div class="recommendation-textbox">
+                                <h4>Record the Stories You Love</h4>
+                                <p>
+                                    (In Development) Record the Movies and TV Shows you've seen, your night 
+                                    at the theatre, or the books you've read.
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="col col-12 col-lg-4">
-                        <i class="fa-regular fa-comment-dots fa-3x fa-icon"></i>
-                        <div class="recommendation-textbox">
-                            <h4>Share Stories</h4>
-                            <p>
-                                (In Development) Share your favourite stories with your friends. 
-                            </p>
+                        <div class="recommendation-header">
+                            <i class="fa-regular fa-comment-dots fa-3x fa-icon"></i>
+                            <div class="recommendation-textbox">
+                                <h4>Share Stories</h4>
+                                <p>
+                                    (In Development) Share your favourite stories with your friends. 
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="col col-12 col-lg-4">
-                        <i class="fa-solid fa-magnifying-glass fa-3x fa-icon"></i>
-                        <div class="recommendation-textbox">
-                            <h4>Discover New Stories</h4>
-                            <p>
-                                See what's trending and what stories others love.
-                            </p>
+                        <div class="recommendation-header">
+                            <i class="fa-solid fa-magnifying-glass fa-3x fa-icon"></i>
+                            <div class="recommendation-textbox">
+                                <h4>Discover New Stories</h4>
+                                <p>
+                                    See what's trending and what stories others love.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -162,13 +255,67 @@
             crossorigin="anonymous">
         </script>
     </body>
-    <!-- <footer 
-        class="text-center text-lg-start text-muted bg-dark d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-        <div class="me-5 d-none d-lg-block"> -->
-    <footer class="text-muted bg-dark">
-        <div>
-            <span>© 2022 goodwatches</span>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-muted">
+        <!-- Section: Links  -->
+        <section class="">
+        <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                GOODWATCHES
+                </h6>
+                <p>
+                Made for book-lovers, theatre-lovers, TV-lovers, and movie-lovers.
+                </p>
+            </div>
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                Useful links
+                </h6>
+                <p>
+                <a href="#!" class="text-reset">About</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">Team</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">Help</a>
+                </p>
+            </div>
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                <p>
+                <i class="fas fa-envelope me-3"></i>
+                info@example.com
+                </p>
+                <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+            </div>
+            <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
         </div>
+        </section>
+        <!-- Section: Links  -->
+    
+        <!-- Copyright -->
+        <div class="text-end p-4 bg-dark">
+            © 2022 goodwatches
+        </div>
+        <!-- Copyright -->
     </footer>
-
+    <!-- Footer -->
 </html>

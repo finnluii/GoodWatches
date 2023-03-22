@@ -46,6 +46,13 @@
     padding: 5% 10%;
 }
 
+.recommendation-header:hover {
+    color: var(--tertiary-color);
+}
+.recommendation-header:hover > .fa-icon{
+    color: var(--tertiary-color);
+}
+
 .recommendation-textbox {
     padding: 7% 7%; 
 }
@@ -66,10 +73,6 @@
     color: var(--primary-color);
 }
 
-.fa-icon:hover {
-    color: var(--tertiary-color);
-}
-
 /* Trending section */
 
 .trending-img {
@@ -77,12 +80,17 @@
     padding: 3% 0;
 }
 
-#testimonials {
-    background-color: var(--primary-color);
+.carousel-item {
+    background-color: var(--tertiary-color);
+    height: 300px;
+}
+
+.testimonials {
     color: #ffffff;
     font-size: 3rem;
-    padding: 20% 0;
+    padding: 0 150px;
     text-align: center;
+    width: 75%;
 }
 
 /* navigation bar */
@@ -93,7 +101,10 @@
 }
 
 .navbar {
+    background-color: var(--secondary-color);
     font-size: 1.1rem;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .nav-item {
@@ -102,6 +113,11 @@
 
 .nav-link {
     font-family: 'Ubuntu', sans-serif;
+}
+
+footer {
+    background-color: var(--primary-color);
+    padding-top: 0.5%;
 }
 
 

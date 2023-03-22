@@ -25,6 +25,14 @@ const mdbAPIURL = "https://api.themoviedb.org/3";
 //     .then(response => response.json())
 //     .then(data => res.json(data));
 // });
+
+// For the static resources like jpgs...
+app.use(express.static(path.resolve(`${__dirname}/../client/src/bootstrap_files`)));
+
+app.get("/", async (req, res) => {
+  res.sendFile(path.resolve(`${__dirname}/../client/src/bootstrap_files/index.html`))
+});
+
 app.get("/trending", async (req, res) => {
   // res.json({ "movies" : "Damage" });
   const response = await fetch(`${mdbAPIURL}/trending/all/day?api_key=${mdbAPIKey}`);
