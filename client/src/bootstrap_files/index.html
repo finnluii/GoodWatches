@@ -12,6 +12,9 @@
             rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" 
             crossorigin="anonymous"
         >
+        <!-- Custom Styles -->
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        
         <!-- Fonts -->
         <link href="http://fonts.cdnfonts.com/css/major-mono-display-2" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
@@ -20,8 +23,7 @@
 
         <!-- Font Awesome (icons) -->
         <script src="https://kit.fontawesome.com/9c40133420.js" crossorigin="anonymous"></script>
-        <!-- Custom Styles -->
-        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <!-- <script src="index.js"></script> -->
                 
     </head>
     <header>
@@ -31,7 +33,7 @@
             <!-- Add fixed-top class to nav to fix it to the top -->
             <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">goodwatches</a>
+                    <a class="navbar-brand" href="/">goodwatches</a>
                     <button class="navbar-toggler" 
                     type="button"
                         data-bs-toggle="collapse"
@@ -41,7 +43,7 @@
                     <div class="collapse navbar-collapse" id="navbarContent">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="">Movies</a>
+                                <a class="nav-link" href="/movies">Movies</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="">TV Shows</a>
@@ -85,6 +87,17 @@
                 </div>
             </div>
         </section>
+
+        <section id="form" class="container-fluid">
+            <form action="">
+                <div class="form-floating mb-3">
+                    <input type="searchText" class="form-control" id="floatingInput" placeholder="Parks">
+                    <label for="floatingInput">Search for a show, movie, stage show, or book</label>
+                </div>
+                <button type="submit" class="btn btn-dark float-end">Search</button>
+            </form>
+        </section>
+
         <section id="new"></section>
         <section id="trending">
             <div class="container-fluid">
@@ -281,7 +294,7 @@
                 Useful links
                 </h6>
                 <p>
-                <a href="#!" class="text-reset">About</a>
+                <a href="/about" class="text-reset">About</a>
                 </p>
                 <p>
                 <a href="#!" class="text-reset">Team</a>
@@ -312,7 +325,7 @@
         <!-- Section: Links  -->
     
         <!-- Copyright -->
-        <div class="text-end p-4 bg-dark">
+        <div class="text-center p-4 bg-dark">
             © 2022 goodwatches
         </div>
         <!-- Copyright -->

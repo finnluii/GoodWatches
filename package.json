@@ -1,0 +1,26 @@
+{
+  "name": "goodwatches",
+  "version": "1.0.0",
+  "description": "A site to track movies, TV shows, theatre and books.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/finnluii/GoodWatches.git"
+  },
+  "author": "finnluii",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/finnluii/GoodWatches/issues"
+  },
+  "homepage": "https://github.com/finnluii/GoodWatches#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

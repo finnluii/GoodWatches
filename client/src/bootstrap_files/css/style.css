@@ -120,6 +120,10 @@ footer {
     padding-top: 0.5%;
 }
 
+#about {
+    padding: 100px 20px;
+}
+
 
 
 /* // X-Small devices (portrait phones, less than 576px)
@@ -133,6 +137,9 @@ footer {
         position: static; */
         display:block;
         padding: 10px;
+        font-size: 0.5rem;
+    }
+    #testimonials {
         font-size: 0.5rem;
     }
 }
